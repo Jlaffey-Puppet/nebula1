@@ -13,7 +13,7 @@ steps:
     vars:
       gcp_region: us-east1
       gcp_location: us-east1-b
-      gcp_project: kenazk-sandbox
+      gcp_project: Nebula1
     workspace: nebula-demo
     directory: provision-gke-terraform/infra/
     credentials:
@@ -31,7 +31,7 @@ steps:
     apitoken:
       $type: Secret
       name: slack-token
-    channel: "#nebula-workflows"
-    message: "Provisioning K8s with Terraform succeeded! Good job everyone."
+    channel: "#team-se-west"
+    message: "If you see this, the Party Llama is wreaking havoc with Nebula"
   dependsOn:
   - provision-gke-with-terraform
